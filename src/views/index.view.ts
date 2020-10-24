@@ -63,7 +63,7 @@ export function indexView(data: any): string {
          </ul>
          <p>From there go to the console and interact with <code>window.data</code> variable.</p>
       </main>
-      <code  id="output"></code>
+      <code id="output"></code>
       <footer>
          <a href="https://webdevetc.com/">webdevetc (documentation)</a>
       </footer>

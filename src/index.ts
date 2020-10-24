@@ -21,6 +21,8 @@ export async function browserDump(
     address: DEFAULT_ADDRESS,
     ...customOptions,
   };
+  const port = options.port || DEFAULT_PORT;
+  const address = options.address || DEFAULT_ADDRESS;
   const logger = options.silent
     ? (..._: any) => undefined
     : (...value: any) => console.log(...value);
@@ -41,8 +43,6 @@ export async function browserDump(
       }
     });
 
-    const port = options.port || DEFAULT_PORT;
-    const address = options.address || DEFAULT_ADDRESS;
     dumpServer.listen(port, address);
 
     logger(

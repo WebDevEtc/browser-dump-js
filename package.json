@@ -1,22 +1,19 @@
 {
   "name": "@webdevetc/browser-dump",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Dump your JS data to your browser, so you can inspect it easily",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-
     "format": "prettier --write \"src/**/*.ts\" ",
     "lint": "tslint -p tsconfig.json",
-
     "prepare": "yarn build",
     "prepublishOnly": "yarn test && yarn format && yarn lint",
     "preversion": "yarn format && yarn lint",
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags"
-
   },
   "repository": {
     "type": "git",

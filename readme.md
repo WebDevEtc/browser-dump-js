@@ -18,8 +18,15 @@ it('should test something', async () => {
     });
     // (Your browser will automatically open, and you can
     // debug whatever data you send to it there!)
+
+    // The node server will automatically close as soon as it 
+    // receives a visit from your browser.
 })
 ```
+
+## FAQ/More info
+
+For more info please see my site - [JS browser dump](https://webdevetc.com)
 
 
 ## TODO
@@ -27,7 +34,7 @@ it('should test something', async () => {
  - [ ] Support more than JSON for serialisation.
  - [ ] Support jest when `silent=true` (console.log messages will be hidden)
  - [ ] Test on non Mac OS/non Chrome
- - [ ] Create a nice interactive interface on the web browser view
+ - [ ] Create a nice interactive interface on the web browser view (such as Laravel/Symfony's [var dumper](https://symfony.com/doc/current/components/var_dumper.html)
  - [ ] Organise file structure better
  - [ ] Handle server errors, reject the awaited Promise
  - [ ] Set defaults with env
