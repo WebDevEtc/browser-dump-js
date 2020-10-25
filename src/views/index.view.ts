@@ -1,3 +1,5 @@
+import  serialize = require("serialize-javascript");
+
 export function indexView(data: any): string {
   return `
    <html lang="en">
@@ -69,10 +71,11 @@ export function indexView(data: any): string {
       </footer>
       <script>
          // Your data - access it via window.data!
-         window.data = ${JSON.stringify(data)};
+         window.data = ${serialize(data)};
+         window.dataJson = ${JSON.stringify(data)};
          
          console.log('%cYour data:','font-weight: bold; color: #bada55; font-size: 20px;');
-         console.log('%c(access it with window.data)', 'font-style: italic; color: gray;');
+         console.log('%c(access it with window.data. You can also access window.dataJson to view it as parsed JSON)', 'font-style: italic; color: gray;');
          console.log(data);
          
          document.getElementById('output').innerText = JSON.stringify(window.data,null, '  ');

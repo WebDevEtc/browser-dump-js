@@ -31,7 +31,8 @@ For more info please see my site - [JS browser dump](https://webdevetc.com)
 
 ## TODO
 
- - [ ] Support more than JSON for serialisation.
+ - [x] Support more than JSON for serialisation.
+ - [ ] Handle cyclic JSON
  - [ ] Support jest when `silent=true` (console.log messages will be hidden)
  - [ ] Test on non Mac OS/non Chrome
  - [ ] Create a nice interactive interface on the web browser view (such as Laravel/Symfony's [var dumper](https://symfony.com/doc/current/components/var_dumper.html)
