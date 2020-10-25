@@ -15,9 +15,14 @@ it('should test something', async () => {
        apiResponseData,
        arrayOfIds: [442, 541, 441,],
        userName: 'admin',
+       userIds: new Set([4814,424,235]),
+       aFunction: () => console.log('you can run this with window.data.aFunction()'),
     });
     // (Your browser will automatically open, and you can
     // debug whatever data you send to it there!)
+ 
+    // JSON output is shown in browser, but you can also use Chrome's
+    // inspector to view the raw objects (works with Set, functions etc)
 
     // The node server will automatically close as soon as it 
     // receives a visit from your browser.
@@ -33,6 +38,8 @@ For more info please see my site - [JS browser dump](https://webdevetc.com)
 
  - [x] Support more than JSON for serialisation.
  - [ ] Handle cyclic JSON
+ - [ ] Handle primatives such as string/number, do not JSON.stringify them
+ - [ ] Handle port not free (find an available port)
  - [ ] Support jest when `silent=true` (console.log messages will be hidden)
  - [ ] Test on non Mac OS/non Chrome
  - [ ] Create a nice interactive interface on the web browser view (such as Laravel/Symfony's [var dumper](https://symfony.com/doc/current/components/var_dumper.html)
@@ -40,5 +47,7 @@ For more info please see my site - [JS browser dump](https://webdevetc.com)
  - [ ] Handle server errors, reject the awaited Promise
  - [ ] Set defaults with env
  - [ ] Add tests
+ - [ ] Add nicer stack trace info
  
+
 
