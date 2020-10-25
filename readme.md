@@ -1,5 +1,10 @@
 ## webdevetc browser dump
 
+[![npm version](https://badge.fury.io/js/%40webdevetc%2Fbrowser-dump.svg)](https://badge.fury.io/js/%40webdevetc%2Fbrowser-dump)   [![GitHub version](https://badge.fury.io/gh/WebDevEtc%2Fbrowser-dump-js.svg)](https://badge.fury.io/gh/WebDevEtc%2Fbrowser-dump-js)
+  [![NPM downloads](https://img.shields.io/npm/dm/@webdevetc/browser-dump?style=social)](https://www.npmjs.com/package/@webdevetc/browser-dump)
+  
+
+
 Have you ever found it hard to debug tests, looking at output in your command line console?
 
 Just add `await browserDump(yourDataToDebug)` and it will load that data in a web browser for you to easily inspect using Chrome's inspector tools.
